@@ -1,0 +1,41 @@
+! ==============================
+! DailyMotion 香港首页内容屏蔽规则
+! ==============================
+
+! 隐藏页面主要标题
+www.dailymotion.com##h1
+www.dailymotion.com##h2
+www.dailymotion.com##.title
+www.dailymotion.com##.video-title
+
+! 隐藏视频播放器和缩略图
+www.dailymotion.com##.Video
+www.dailymotion.com##.media-video
+www.dailymotion.com##.video-preview
+www.dailymotion.com##.video-thumbnail
+www.dailymotion.com##iframe[src*="dailymotion.com/embed"]
+
+! 隐藏视频描述、作者信息
+www.dailymotion.com##.description
+www.dailymotion.com##.metadata
+www.dailymotion.com##.owner-name
+www.dailymotion.com##.username
+
+! 隐藏推荐列表、侧边栏
+www.dailymotion.com##.related-videos
+www.dailymotion.com##.recommendations
+www.dailymotion.com##.suggested-videos
+www.dailymotion.com##.sidebar
+
+! 隐藏搜索结果标题
+www.dailymotion.com##.search-result-title
+
+! 隐藏广告和推广内容
+www.dailymotion.com##.ad-container
+www.dailymotion.com##.promo
+www.dailymotion.com##.sponsored
+
+! 隐藏底部文字和页脚
+www.dailymotion.com##footer
+www.dailymotion.com##.footer
+www.dailymotion.com##.footer-links
