@@ -1,41 +1,52 @@
-! ==============================
-! DailyMotion 香港首页内容屏蔽规则
-! ==============================
+! ============================
+! DailyMotion 全站内容清空规则
+! ============================
 
-! 隐藏页面主要标题
-www.dailymotion.com##h1
-www.dailymotion.com##h2
-www.dailymotion.com##.title
-www.dailymotion.com##.video-title
+! 隐藏视频标题
+www.dailymotion.com##[class^="HomeVideoInfo__videoTitle"]
+www.dailymotion.com##[class^="HomeVideoInfo__titleContent"]
+www.dailymotion.com##h2[class^="Typography__h5"]
 
-! 隐藏视频播放器和缩略图
-www.dailymotion.com##.Video
-www.dailymotion.com##.media-video
-www.dailymotion.com##.video-preview
-www.dailymotion.com##.video-thumbnail
-www.dailymotion.com##iframe[src*="dailymotion.com/embed"]
+! 隐藏 overlay 遮罩
+www.dailymotion.com##[class^="VideoOverlay__overlay"]
 
-! 隐藏视频描述、作者信息
-www.dailymotion.com##.description
-www.dailymotion.com##.metadata
-www.dailymotion.com##.owner-name
-www.dailymotion.com##.username
+! 隐藏视频缩略图
+www.dailymotion.com##img[class^="VideoThumbnail"]
+www.dailymotion.com##div[class^="VideoThumbnail"]
 
-! 隐藏推荐列表、侧边栏
-www.dailymotion.com##.related-videos
-www.dailymotion.com##.recommendations
-www.dailymotion.com##.suggested-videos
-www.dailymotion.com##.sidebar
+! 隐藏视频卡片整体
+www.dailymotion.com##div[class^="VideoCard"]
+www.dailymotion.com##a[class^="VideoCard"]
 
-! 隐藏搜索结果标题
-www.dailymotion.com##.search-result-title
+! 隐藏视频信息区块（标题、作者、浏览数等）
+www.dailymotion.com##div[class^="HomeVideoInfo"]
+www.dailymotion.com##div[class^="VideoInfo"]
+www.dailymotion.com##[class^="VideoMetaData"]
 
-! 隐藏广告和推广内容
-www.dailymotion.com##.ad-container
-www.dailymotion.com##.promo
-www.dailymotion.com##.sponsored
+! 隐藏首页 feed
+www.dailymotion.com##div[class^="Feed"]
+www.dailymotion.com##section[class^="Feed"]
+www.dailymotion.com##div[id="feed"]
 
-! 隐藏底部文字和页脚
-www.dailymotion.com##footer
-www.dailymotion.com##.footer
-www.dailymotion.com##.footer-links
+! 隐藏"Trending"、"Recommended"等模块标题
+www.dailymotion.com##h2[class^="SectionTitle"]
+www.dailymotion.com##div[class^="SectionHeader"]
+www.dailymotion.com##header[class^="SectionHeader"]
+
+! 隐藏频道/推荐频道行
+www.dailymotion.com##div[class^="ChannelCard"]
+www.dailymotion.com##a[class^="ChannelCard"]
+
+! 隐藏首页所有视频列表
+www.dailymotion.com##ul[class^="VideoList"]
+www.dailymotion.com##div[class^="VideoList"]
+www.dailymotion.com##section[class^="VideoList"]
+
+! 隐藏右侧推荐栏
+www.dailymotion.com##aside
+www.dailymotion.com##div[class^="RightRail"]
+www.dailymotion.com##section[class^="RightRail"]
+
+! 隐藏所有动态加载的视频卡片
+www.dailymotion.com##div[class*="Video"]
+www.dailymotion.com##a[class*="Video"]
